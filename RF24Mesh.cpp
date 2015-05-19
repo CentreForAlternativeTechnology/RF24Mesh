@@ -13,7 +13,7 @@ RF24Mesh::RF24Mesh( RF24& _radio,RF24Network& _network ): radio(_radio),network(
 /*****************************************************/
 
 void RF24Mesh::begin(uint8_t channel, rf24_datarate_e data_rate){
-  radio.begin();
+  //radio.begin();
   if(getNodeID()){ //Not master node
     mesh_address = MESH_DEFAULT_ADDRESS;
   }else{
